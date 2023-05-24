@@ -2,9 +2,9 @@ import { component$, useComputed$, useSignal, $, useStore, useVisibleTask$ } fro
 import { type DocumentHead, Link, routeLoader$, useLocation } from '@builder.io/qwik-city';
 import { getSmallPokemons } from '~/helpers/get-small-pokemons';
 import type { SmallPokemon } from '~/interfaces';
-import { PokemonImage } from '../../../components/pokemons/pokemon-image';
 import { Modal } from '~/components/shared';
 import { getFunFactAboutPoemon } from '~/helpers/get-chat-gpt-response';
+import { PokemonImage } from '~/components/pokemons/pokemon-image';
 
 export const usePokemonList = routeLoader$<SmallPokemon[]>(async({query, redirect, pathname}) => {
 
